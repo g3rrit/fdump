@@ -77,8 +77,9 @@ int main(int argc, char **argv) {
             fprintf(out, "| [%08x] ", pos);
             for(int i = 0; i < LINE_LENGTH; i++) {
                 print_hex(line[i]);
+                fprintf(out, " ");
             }
-            fprintf(out, " - ");
+            fprintf(out, "+ ");
             for(int i = 0; i < LINE_LENGTH; i++) {
                 print_char(line[i]);
             } 
